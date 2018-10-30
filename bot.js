@@ -37,10 +37,4 @@ function timerFunc() {
 
 var timer = setTimeout(timerFunc, 1);
 
-client.on('ready', () => {
-    console.log('helllo,imready');
-    client.user.setgame('ب_ب', 'https://twitch.tv/qwerewwsxqws');
-
-};
-
 client.login(process.env.BOT_TOKEN);
