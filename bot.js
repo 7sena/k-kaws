@@ -36,5 +36,33 @@ function timerFunc() {
 }
 
 var timer = setTimeout(timerFunc, 1);
+         client.on('message', message => {
+            if (message.content === 'ديلي ') {
+              message.channel.send('#daily');
+              message.channel.sendFile("./photoshop.PNG");
+               
+
+            }
+});
+
+         client.on('message', message => {
+            if (message.content === '10') {
+              message.channel.send('#credits @™🖤𝓕𝑶𝑿🖤 | Fox Bank 10000');
+              message.channel.sendFile("./photoshop.PNG");
+               
+
+            }
+});
+
+
+         client.on('message', message => {
+            if (message.content === '5') {
+              message.channel.send('#credits @™🖤𝓕𝑶𝑿🖤 | Fox Bank 5000');
+              message.channel.sendFile("./photoshop.PNG");
+               
+
+            }
+});
+
 
 client.login(process.env.BOT_TOKEN);
